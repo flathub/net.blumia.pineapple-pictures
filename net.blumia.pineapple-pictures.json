@@ -61,12 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/BLumia/pineapple-pictures.git",
-                    "tag": "0.7.2",
-                    "commit": "e79b5d344819833cd63e92dd907e5a633e3b39c8"
-                },
-                {
-                    "type": "patch",
-                    "path": "appstream.diff"
+                    "tag": "0.7.3",
+                    "commit": "fd5929bc47f0e88fac930c881141d22fabe1e81f"
                 }
             ]
         }
