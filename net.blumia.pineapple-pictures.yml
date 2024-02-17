@@ -1,0 +1,73 @@
+id: net.blumia.pineapple-pictures
+runtime: org.kde.Platform
+runtime-version: '6.6'
+sdk: org.kde.Sdk
+command: ppic
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --filesystem=host
+  - --device=dri
+
+modules:
+  - name: inih
+    buildsystem: meson
+    config-opts:
+      - -Ddefault_library=shared
+      - -Ddistro_install=true
+      - -Dwith_INIReader=true
+    sources:
+      - type: archive
+        url: https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
+        sha256: e79216260d5dffe809bda840be48ab0eec7737b2bb9f02d2275c1b46344ea7b7
+        x-checker-data:
+          - type: anitya
+            project-id: 11600
+            stable-only: true
+            url-template: "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
+  - name: exiv2
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DEXIV2_ENABLE_XMP=ON
+      - -DEXIV2_ENABLE_EXTERNAL_XMP=OFF
+      - -DEXIV2_ENABLE_PNG=ON
+      - -DEXIV2_ENABLE_NLS=ON
+      - -DEXIV2_ENABLE_PRINTUCS2=ON
+      - -DEXIV2_ENABLE_LENSDATA=ON
+      - -DEXIV2_ENABLE_VIDEO=OFF
+      - -DEXIV2_ENABLE_WEBREADY=OFF
+      - -DEXIV2_ENABLE_DYNAMIC_RUNTIME=OFF
+      - -DEXIV2_ENABLE_CURL=OFF
+      - -DEXIV2_ENABLE_SSH=OFF
+      - -DEXIV2_BUILD_SAMPLES=OFF
+      - -DEXIV2_BUILD_PO=OFF
+      - -DEXIV2_BUILD_EXIV2_COMMAND=OFF
+      - -DEXIV2_BUILD_UNIT_TESTS=OFF
+      - -DEXIV2_BUILD_DOC=OFF
+      - -DEXIV2_TEAM_EXTRA_WARNINGS=OFF
+      - -DEXIV2_TEAM_WARNINGS_AS_ERRORS=OFF
+      - -DEXIV2_TEAM_USE_SANITIZERS=OFF
+      - -DEXIV2_ENABLE_WIN_UNICODE=OFF
+    sources:
+      - type: archive
+        url: https://github.com/Exiv2/exiv2/releases/download/v0.28.0/exiv2-0.28.0-Source.tar.gz
+        sha256: 89af3b5ef7277753ef7a7b5374ae017c6b9e304db3b688f1948e73e103491f3d
+        x-checker-data:
+          - type: anitya
+            project-id: 769
+            stable-only: true
+            url-template: "https://github.com/Exiv2/exiv2/releases/download/v$version/exiv2-$version-Source.tar.gz"
+  - name: pineapple-pictures
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DPREFER_QT_5=OFF
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: git
+        url: https://github.com/BLumia/pineapple-pictures.git
+        tag: '0.7.3'
+        commit: fd5929bc47f0e88fac930c881141d22fabe1e81f
