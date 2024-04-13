@@ -64,10 +64,9 @@ modules:
   - name: pineapple-pictures
     buildsystem: cmake-ninja
     config-opts:
-      - -DPREFER_QT_5=OFF
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: git
         url: https://github.com/BLumia/pineapple-pictures.git
-        tag: '0.7.3'
-        commit: fd5929bc47f0e88fac930c881141d22fabe1e81f
+        tag: '0.7.4'
+        commit: d27f94bc4d6a46e94bb416bc4b992d19496f60e1
