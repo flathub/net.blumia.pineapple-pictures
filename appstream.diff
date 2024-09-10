@@ -1,13 +1,39 @@
+diff --git a/NEWS b/NEWS
+index 16528c3..a83a4cc 100644
+--- a/NEWS
++++ b/NEWS
+@@ -1,3 +1,13 @@
++Version 0.8.1
++~~~~~~~~~~~~~
++Released: 2024-08-25
++
++Features:
++ * New command line option to list all supported formats
++
++Contributors:
++ albanobattistella, mmahhi, ovl-1, gallegonovato, Oğuz Ersen
++
+ Version 0.8.0
+ ~~~~~~~~~~~~~
+ Released: 2024-06-29
 diff --git a/dist/appstream/net.blumia.pineapple-pictures.metainfo.xml b/dist/appstream/net.blumia.pineapple-pictures.metainfo.xml
-index 4860c13..ffdfcd1 100644
+index e5a980d..a324aae 100644
 --- a/dist/appstream/net.blumia.pineapple-pictures.metainfo.xml
 +++ b/dist/appstream/net.blumia.pineapple-pictures.metainfo.xml
-@@ -23,7 +23,7 @@
-     <p xml:lang="uk">Pineapple Pictures – це легкий і простий у використанні переглядач зображень, який постачається зі зручною навігаційною мініатюрою при збільшенні масштабу і не містить жодної підтримки керування зображеннями.</p>
-     <p xml:lang="zh-CN">菠萝看图是一个轻量级易用的图像查看器，在图片放大时提供了方便的鸟瞰导航功能，且不包含任何图片管理功能。</p>
-   </description>
--  <developer>
-+  <developer id="net.blumia">
-     <name>Gary (BLumia) Wang et al.</name>
-     <name xml:lang="ja">Gary (BLumia) Wang など</name>
-     <name xml:lang="nl">Gary (BLumia) Wang e.a.</name>
+@@ -74,6 +74,16 @@
+     </screenshot>
+   </screenshots>
+   <releases>
++    <release type="stable" version="0.8.1" date="2024-08-25T00:00:00Z">
++      <description>
++        <p>This release adds the following feature:</p>
++        <ul>
++          <li>New command line option to list all supported formats</li>
++        </ul>
++        <p>With contributions from:</p>
++        <p>albanobattistella, mmahhi, ovl-1, gallegonovato, Oğuz Ersen</p>
++      </description>
++    </release>
+     <release type="stable" version="0.8.0" date="2024-06-29T00:00:00Z">
+       <description>
+         <p>This release adds the following feature:</p>
