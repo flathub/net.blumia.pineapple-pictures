@@ -68,5 +68,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/BLumia/pineapple-pictures.git
-        tag: '0.8.0'
-        commit: 9fe3aca774e0150ec4ef389e3a700c4ea691ddcd
+        tag: '0.8.1'
+        commit: d574018a8e277ab96fb23fc4974540795642d17e
+      - type: patch
+        path: "appstream.diff"
