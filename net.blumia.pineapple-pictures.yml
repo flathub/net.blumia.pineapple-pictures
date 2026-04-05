@@ -11,6 +11,13 @@ finish-args:
   - --filesystem=host
   - --device=dri
 
+cleanup:
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /share/man
+  
+
 modules:
   - name: inih
     buildsystem: meson
