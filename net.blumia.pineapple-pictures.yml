@@ -75,8 +75,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/BLumia/pineapple-pictures.git
-        tag: '1.4.1'
-        commit: 8f0d4da7ad9ace7186de34f0ce1e43d0b0129f9e
+        tag: '1.5.0'
+        commit: ebc2387a14a49e2b77ea74e6404bda451c6c97ef
         x-checker-data:
           - type: anitya
             project-id: 383633
