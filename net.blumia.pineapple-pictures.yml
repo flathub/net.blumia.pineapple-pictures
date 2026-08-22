@@ -1,6 +1,6 @@
 id: net.blumia.pineapple-pictures
 runtime: org.kde.Platform
-runtime-version: '6.10'
+runtime-version: '6.11'
 sdk: org.kde.Sdk
 command: ppic
 
@@ -75,8 +75,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/BLumia/pineapple-pictures.git
-        tag: '1.5.0'
-        commit: ebc2387a14a49e2b77ea74e6404bda451c6c97ef
+        tag: '1.6.0'
+        commit: ec2f2b326c9304a41c636b7e7afed1cfdcc90106
         x-checker-data:
           - type: anitya
             project-id: 383633
