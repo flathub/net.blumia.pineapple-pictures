@@ -30,10 +30,10 @@ modules:
         url: https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
         sha256: e79216260d5dffe809bda840be48ab0eec7737b2bb9f02d2275c1b46344ea7b7
         x-checker-data:
-          - type: anitya
-            project-id: 11600
-            stable-only: true
-            url-template: "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
+          type: anitya
+          project-id: 11600
+          stable-only: true
+          url-template: "https://github.com/benhoyt/inih/archive/refs/tags/r$version.tar.gz"
   - name: exiv2
     buildsystem: cmake-ninja
     builddir: true
@@ -64,10 +64,10 @@ modules:
         url: https://github.com/Exiv2/exiv2/releases/download/v0.28.0/exiv2-0.28.0-Source.tar.gz
         sha256: 89af3b5ef7277753ef7a7b5374ae017c6b9e304db3b688f1948e73e103491f3d
         x-checker-data:
-          - type: anitya
-            project-id: 769
-            stable-only: true
-            url-template: "https://github.com/Exiv2/exiv2/releases/download/v$version/exiv2-$version-Source.tar.gz"
+          type: anitya
+          project-id: 769
+          stable-only: true
+          url-template: "https://github.com/Exiv2/exiv2/archive/refs/tags/v$version.tar.gz"
   - name: pineapple-pictures
     buildsystem: cmake-ninja
     config-opts:
@@ -78,7 +78,7 @@ modules:
         tag: '1.6.0'
         commit: ec2f2b326c9304a41c636b7e7afed1cfdcc90106
         x-checker-data:
-          - type: anitya
-            project-id: 383633
-            stable-only: true
-            tag-template: $version
+          type: anitya
+          project-id: 383633
+          stable-only: true
+          tag-template: $version
