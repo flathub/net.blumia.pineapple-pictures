@@ -27,8 +27,8 @@ modules:
       - -Dwith_INIReader=true
     sources:
       - type: archive
-        url: https://github.com/benhoyt/inih/archive/refs/tags/r58.tar.gz
-        sha256: e79216260d5dffe809bda840be48ab0eec7737b2bb9f02d2275c1b46344ea7b7
+        url: https://github.com/benhoyt/inih/archive/refs/tags/r63.tar.gz
+        sha256: 5d7967de62c5bfdc4f9f5ab06ce44c9e498bae021c7dac5792c0696e76aa9963
         x-checker-data:
           type: anitya
           project-id: 11600
@@ -61,8 +61,8 @@ modules:
       - -DEXIV2_ENABLE_WIN_UNICODE=OFF
     sources:
       - type: archive
-        url: https://github.com/Exiv2/exiv2/releases/download/v0.28.0/exiv2-0.28.0-Source.tar.gz
-        sha256: 89af3b5ef7277753ef7a7b5374ae017c6b9e304db3b688f1948e73e103491f3d
+        url: https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.9.tar.gz
+        sha256: 700b76b97695b2fab4ef8c79619c68ae57d09e0c130724791cafbd39e0eb4aef
         x-checker-data:
           type: anitya
           project-id: 769
